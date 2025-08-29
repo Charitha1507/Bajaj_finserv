@@ -2,6 +2,10 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import './App.css';
 
+const api = axios.create({
+  baseURL: process.env.REACT_APP_API_BASE_URL || ''
+});
+
 function App() {
   const [inputData, setInputData] = useState('');
   const [result, setResult] = useState(null);
@@ -28,7 +32,7 @@ function App() {
         dataArray = inputData.split(',').map(item => item.trim().replace(/['"]/g, ''));
       }
 
-      const response = await axios.post('/bfhl', {
+      const response = await api.post('/bfhl', {
         data: dataArray
       });
 
