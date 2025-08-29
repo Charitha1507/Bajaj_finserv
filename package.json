@@ -1,0 +1,17 @@
+{
+  "name": "bfhl-api-project",
+  "version": "1.0.0",
+  "description": "BFHL REST API with Node.js backend and React frontend",
+  "main": "index.js",
+  "scripts": {
+    "install-all": "cd server && npm install && cd ../client && npm install",
+    "start-server": "cd server && npm start",
+    "start-client": "cd client && npm start",
+    "dev-server": "cd server && npm run dev",
+    "build-client": "cd client && npm run build",
+    "test-api": "cd server && npm test"
+  },
+  "keywords": ["api", "rest", "bfhl", "nodejs", "react"],
+  "author": "Your Name",
+  "license": "MIT"
+}

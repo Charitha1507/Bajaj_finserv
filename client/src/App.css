@@ -1,0 +1,23 @@
+.App {
+  text-align: left;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 16px;
+  font-size: 1.5rem;
+}
+
+h3 {
+  color: #444;
+  margin-bottom: 12px;
+  font-size: 1.2rem;
+}
+
+ul {
+  color: #555;
+}
+
+li {
+  margin-bottom: 4px;
+}
